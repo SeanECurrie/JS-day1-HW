@@ -42,3 +42,25 @@ console.log(replaceEvens(arr))
 //Given arr == ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
 //Output arr == ["even index","Baseball","even index","Goku","even index","Rodger"]
 
+// TWO CODE WARS IN JS THAT I ALREADY DID IN PYTHON :
+// Vowel Count : https://www.codewars.com/kata/54ff3102c1bad923760001f3
+
+function getCount(str) {
+    let vowels = ['a', 'e', 'i', 'o', 'u']
+    let string2 = str.toLowerCase()
+    let vowel_count = 0
+    for (let i of string2){
+      if (vowels.includes(i)){
+        vowel_count++
+      }
+    }
+    return vowel_count;
+  }
+
+  // Detect Pangram : https://www.codewars.com/kata/545cedaa9943f7fe7b000048
+
+  function isPangram(string){
+    let string2 = string.toLowerCase();
+    let alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+    return alphabet.every(x => string2.includes(x));
+  }
